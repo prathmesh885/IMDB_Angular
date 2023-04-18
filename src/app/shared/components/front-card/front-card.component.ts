@@ -12,7 +12,9 @@ export class FrontCardComponent implements OnInit {
 
   movieCard!: IMovie;
   cardId!: number;
-  movieImg!: string
+  movieImg!: string;
+  // serachBarDisable: boolean = false;
+
   constructor(private router: Router, private route: ActivatedRoute, private movieService: MovieService) { }
 
   ngOnInit(): void {

@@ -8,6 +8,8 @@ import { DashboardComponent } from './shared/components/dashboard/dashboard.comp
 import { MovieCardsComponent } from './shared/components/movie-cards/movie-cards.component';
 import { FrontCardComponent } from './shared/components/front-card/front-card.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { FilterPipe } from './shared/pipes/filter.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
     DashboardComponent,
     MovieCardsComponent,
     FrontCardComponent,
-    NavbarComponent
+    NavbarComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

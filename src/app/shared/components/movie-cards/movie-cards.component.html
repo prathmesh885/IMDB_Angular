@@ -10,7 +10,7 @@
 
 
 <div class="row">
-    <div class="col-sm-3 mt-4 " *ngFor="let movie of movieArray">
-        <app-movie-card [movieCard]="movie"></app-movie-card>
+    <div class="col-sm-3 mt-4 " *ngFor="let movie of movieArray | movieArray : searchBar">
+        <app-movie-card [movieCard]="movie" (onSearchEmiter)="searchBar"></app-movie-card>
     </div>
 </div>
